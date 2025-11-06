@@ -1,1 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  background: radial-gradient(circle at top, #0f0f0f, #000);
+  overflow-x: hidden;
+  position: relative;
+}
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, rgba(0,255,128,0.1), rgba(255,255,0,0.1));
+  animation: moveBg 10s infinite alternate ease-in-out;
+  z-index: -1;
+}
+
+@keyframes moveBg {
+  from { transform: translateX(-10%); }
+  to { transform: translateX(10%); }
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 60px;
+  background: rgba(0, 0, 0, 0.6);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.logo {
+  height: 60px;
+}
+
+nav a {
+  color: #0aff9d;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+.hero {
+  text-align: center;
+  padding: 120px 20px;
+  background: linear-gradient(180deg, rgba(0,0,0,0.6), rgba(0,0,0,1));
+}
+
+.hero h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 3.5rem;
+  text-shadow: 0 0 15px #00ffcc;
+}
+
+.hero p {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 25px;
+  background: linear-gradient(90deg, #00ff9d, #00cfff);
+  color: #000;
+  font-weight: 700;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+.btn:hover {
+  box-shadow: 0 0 20px #00ffcc;
+  transform: scale(1.05);
+}
+
+.features {
+  text-align: center;
+  padding: 80px 20px;
+  background: #0a0a0a;
+}
+
+.features h2 {
+  font-family: 'Orbitron', sans-serif;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.card {
+  width: 280px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(0,255,204,0.2);
+  border-radius: 15px;
+  padding: 25px;
+  transition: 0.4s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 15px rgba(0,255,128,0.4);
+}
+
+.about, .cta {
+  text-align: center;
+  padding: 80px 30px;
+}
+
+.about h2, .cta h2 {
+  font-family: 'Orbitron', sans-serif;
+  margin-bottom: 20px;
+}
+
+.cta {
+  background: linear-gradient(90deg, #00ff9d33, #00cfff33);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #000;
+  color: #999;
+  font-size: 0.9rem;
+}
 
